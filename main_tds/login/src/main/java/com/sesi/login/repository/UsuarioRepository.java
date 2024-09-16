@@ -1,5 +1,9 @@
 package com.sesi.login.repository;
 
-public interface UsuarioRepository {
+import org.springframework.data.jpa.repository.JpaRepository;
 
+import com.sesi.login.model.Usuario;
+
+public interface UsuarioRepository extends JpaRepository<Usuario,Long>{
+	Usuario findByNomeUsuario(String nomeUsuario); //quando usar find... recupera o nome do usuario
 }
