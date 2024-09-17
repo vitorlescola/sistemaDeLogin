@@ -31,6 +31,10 @@ public class Usuario {
 	
 	private Set<Papel>papeis=new HashSet<>(); //Set é uma array q n pode repetir 
 	
+	
+	public Usuario() {
+	}
+	
 	public String getNomeUsuario() {
 		return nomeUsuario;
 	}
